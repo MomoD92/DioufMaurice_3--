@@ -149,8 +149,9 @@ main {
 
 .ContainerMenu div {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-self: center;
+    margin: 0 0 1em;
 }
 
 .ContainerMenu div .fas.fa-heart {
@@ -177,6 +178,55 @@ main {
 
 .menuItems {
     width: 100%;
+}
+
+caption {
+    font-size: 1.3em;
+    font-weight: normal;
+    text-align: start;
+    margin: 0 1em 1em;
+}
+
+hr {
+    width: 11%;
+    margin: 0;
+    height: 3px;
+    background-color: #99E2D0;
+    border: none;
+}
+
+tr {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 1.25rem;
+    box-shadow: 0 0 16px #0000002e;
+    cursor: pointer;
+    box-sizing: border-box;
+    margin-bottom: 1em;
+    padding: 1em;
+}
+
+th {
+    text-align: start;
+}
+
+td {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/* tr {
+    background-color: white;
+    border-radius: 1.25rem;
+    box-shadow: 0 0 16px #0000002e;
+    cursor: pointer;
+    box-sizing: border-box;
+}*/
+
+table {
+    width: 32%;
 }
 
 h1,
@@ -555,13 +605,17 @@ figcaption {
         width: auto;
         margin-top: 0;
     }
-    .ContainerMenu div h1 {
-        margin-top: auto;
-    }
     #Container button {
         align-self: center;
         width: auto;
         height: auto;
+    }
+    .menuItems {
+        display: flex;
+        flex-direction: column;
+    }
+    table {
+        width: 100%;
     }
 }
 
