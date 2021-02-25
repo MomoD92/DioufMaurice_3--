@@ -238,16 +238,17 @@ tr {
     cursor: pointer;
     box-sizing: border-box;
     margin-bottom: 1em;
-    padding: 1em;
 }
 
 th {
     text-align: start;
+    padding: 1em 1em 0.3em 1em;
 }
 
 td {
     display: flex;
     justify-content: space-between;
+    padding: 0 1em 1em 1em;
 }
 
 td span {
@@ -595,6 +596,51 @@ figcaption {
 .fade-in:nth-of-type(5) {
     -webkit-animation-delay: 0.6s;
     animation-delay: 0.6s;
+}
+
+
+/*****/
+
+.checkbox {
+    background-color: #99E2D0;
+    width: 55px;
+    margin-left: 30em;
+    -webkit-transform: translate(55px);
+    transform: translate(55px);
+    -webkit-transition: all 0.6s ease-in-out;
+    transition: all 0.6s ease-in-out;
+    position: absolute;
+    height: 5.5em;
+    padding: 1em;
+    border-radius: 0 1.25rem 1.25rem 0;
+}
+
+.fa-check-circle {
+    font-size: 1.2em;
+    color: white;
+    -webkit-transition: all 0.6s ease-in-out;
+    transition: all 0.6s ease-in-out;
+    align-self: center;
+}
+
+tr:hover .checkbox {
+    -webkit-transform: translate(0px);
+    transform: translate(0px);
+    display: block;
+}
+
+tr:hover .fa-check-circle {
+    -webkit-transform: rotate(720deg);
+    transform: rotate(720deg);
+}
+
+tr:hover .price {
+    -webkit-transform: translate(-55px);
+    transform: translate(-55px);
+}
+
+tbody {
+    overflow: hidden;
 }
 
 
