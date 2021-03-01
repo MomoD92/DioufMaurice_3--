@@ -614,7 +614,7 @@ figcaption {
     padding: 1em;
     border-radius: 0 1.25rem 1.25rem 0;
     align-self: center;
-    overflow: hidden;
+    opacity: 0;
 }
 
 .fa-check-circle {
@@ -628,6 +628,7 @@ figcaption {
 tr:hover .checkbox {
     -webkit-transform: translate(0px);
     transform: translate(0px);
+    opacity: 1;
 }
 
 tr:hover .fa-check-circle {
