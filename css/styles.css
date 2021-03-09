@@ -239,6 +239,9 @@ tr {
     cursor: pointer;
     box-sizing: border-box;
     margin-bottom: 1em;
+    position: relative;
+    max-width: 480px;
+    overflow: hidden;
 }
 
 th {
@@ -256,8 +259,16 @@ td span {
     font-weight: bold;
 }
 
+span.nomPlat {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-weight: unset;
+    /* margin-right: 4.5em;*/
+}
+
 table {
-    width: 32%;
+    width: 30%;
 }
 
 h1,
@@ -625,7 +636,7 @@ figcaption {
     padding: 1em;
     border-radius: 0 1.25rem 1.25rem 0;
     align-self: center;
-    opacity: 0;
+    right: 0;
 }
 
 .fa-check-circle {
@@ -639,7 +650,6 @@ figcaption {
 tr:hover .checkbox {
     -webkit-transform: translate(0px);
     transform: translate(0px);
-    opacity: 1;
 }
 
 tr:hover .fa-check-circle {
@@ -648,8 +658,13 @@ tr:hover .fa-check-circle {
 }
 
 tr:hover .price {
-    -webkit-transform: translate(-55px);
-    transform: translate(-55px);
+    /* -webkit-transform: translate(-55px);
+    transform: translate(-55px);*/
+    margin-right: 50px;
+}
+
+span.price {
+    margin-left: 9.5em;
 }
 
 tbody {
