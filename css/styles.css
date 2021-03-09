@@ -160,6 +160,7 @@ body {
 main {
     display: flex;
     flex: 1 1 auto;
+    flex-direction: column;
 }
 
 #Container {
@@ -306,22 +307,23 @@ footer ul li i {
 }
 
 nav h1 {
-    margin: 1em 0 1em 1em;
+    margin: 0.3em 0 1em 0em;
     text-align: left;
 }
 
-aside,
 nav {
     width: 20em;
     text-align: center;
 }
 
 aside {
+    text-align: center;
     color: #353535;
     font-weight: bold;
     font-size: 0.95em;
     border-top: solid 1.8px #d2d2d2;
-    padding: 0;
+    padding: 1em;
+    padding-top: 0;
 }
 
 aside div,
@@ -336,6 +338,11 @@ aside div p {
 
 aside .fa-map-marker-alt {
     margin: 4px 15px 0 0;
+}
+
+.sectionPrincipale {
+    display: flex;
+    flex-direction: row;
 }
 
 dt {
@@ -357,6 +364,10 @@ aside,
 nav,
 section {
     padding: 10px;
+}
+
+aside {
+    margin: 1em;
 }
 
 nav ol {
@@ -530,7 +541,7 @@ figure span {
     position: absolute;
     margin-top: 17px;
     padding: 5px 10px;
-    right: 17%;
+    right: 5%;
 }
 
 figcaption {
@@ -548,7 +559,7 @@ figcaption {
 }
 
 .newResto {
-    right: 50%;
+    right: 45%;
 }
 
 .heartIcon {
@@ -663,6 +674,10 @@ tbody {
     aside div {
         background-color: #eaeaea;
     }
+    .sectionPrincipale {
+        display: flex;
+        flex-direction: column;
+    }
     dl {
         margin: 0 7rem;
     }
@@ -728,9 +743,7 @@ tbody {
     button {
         padding: 9px 10px;
     }
-    aside,
-    nav,
-    section {
+    .sectionPrincipale {
         border-top: solid 1.8px #d2d2d2;
     }
     .ContainerMenu .heartIcon {
@@ -749,9 +762,7 @@ tbody {
     .newResto {
         right: 23%;
     }
-    aside,
-    nav,
-    section {
+    .sectionPrincipale {
         border-top: solid 1.8px #d2d2d2;
     }
     .ContainerMenu .heartIcon {
